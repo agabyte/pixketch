@@ -27,11 +27,23 @@ $(document).ready(function(){
   //generate the table
   generate_table(size);
 
+
   $("td").hover(function(){
     $(this).css("background","#6A50A7");
   });
 
+  $(".button1").click(function(){
+    $("td").hover(function(){
+      $(this).css("background","#6A50A7");
+    });
+  });
+
   $(".button2").click(function(){
     location.reload();
-  })
+  });
+
+  $(".button3").click(function(){
+    location.reload();
+  });
+
 });
